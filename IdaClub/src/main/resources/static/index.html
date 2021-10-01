@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MdbAngularFree</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+<link rel="stylesheet" href="styles.f15897a8565eb4ef653b.css"></head>
+<body>
+  <app-root>
+    <configuration>
+      <system.webServer>
+    <rewrite>
+        <rules>
+            <rule name="redirect all" stopProcessing="true">
+                <match url="^(.*)$" ignoreCase="false" />
+                <conditions logicalGrouping="MatchAll">
+                    <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" pattern="" ignoreCase="false" />
+                </conditions>
+                <action type="Rewrite" url="./" appendQueryString="true" />
+            </rule>
+        </rules>
+    </rewrite>
+      </system.webServer>
+    </configuration>
+  </app-root>
+<script src="runtime-es2015.375f12bc0081c0c12b1d.js" type="module"></script><script src="polyfills-es2015.3a065be6b7fab556c77d.js" type="module"></script><script src="runtime-es5.5f071ba442a6c083b2d7.js" nomodule defer></script><script src="polyfills-es5.96cdf3f03e362d5fa75f.js" nomodule defer></script><script src="scripts.89b3cbd29c12e4985a3a.js" defer></script><script src="main-es2015.7acb1db865a7cbe82e74.js" type="module"></script><script src="main-es5.d95b206ab3f2d7ec7e8b.js" nomodule defer></script></body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+new WOW().init();
+
+</script>
+</html>
